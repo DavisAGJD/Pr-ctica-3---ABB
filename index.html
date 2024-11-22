@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Catálogo de Libros</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Formulario para agregar libros -->
+        <section class="form-section">
+            <div class="form">
+                <input type="text" id="isbn" placeholder="ISBN">
+                <input type="text" id="title" placeholder="Título del Libro">
+                <button id="generateISBN">Generar ISBN</button>
+                <button id="addBook">Agregar Libro</button>
+                <input type="text" id="deleteISBN" placeholder="ISBN para eliminar">
+                <button id="deleteBook">Eliminar</button>
+            </div>
+        </section>
+
+        <!-- Barra de búsqueda -->
+        <section class="search-section">
+            <h2>Buscar en el Catálogo</h2>
+            <div class="search-bar">
+                <input type="text" id="searchISBN" placeholder="Buscar en el catálogo...">
+                <button id="buscarBtn">Buscar</button>
+            </div>
+        </section>
+
+        <!-- Resultados -->
+        <section class="results-section">
+            <h3>Resultados</h3>
+            <div id="results"></div>
+        </section>
+
+        <!-- Catálogo de libros -->
+        <section class="catalog-section">
+            <h3>Catálogo de Libros (Ordenado por ISBN)</h3>
+            <div id="tree" class="catalog-grid"></div>
+        </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
